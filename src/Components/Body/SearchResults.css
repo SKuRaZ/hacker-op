@@ -1,0 +1,197 @@
+.top {
+    display: flex;
+    margin-left: 145px;
+    /* background-color: aquamarine; */
+    height: 52px;
+}
+
+.top .text1 {
+    color: rgba(96, 103, 127, 1);
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.top .text2 {
+    position: absolute;
+    color: #2C2F3A;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.top .rightSide {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: 145px;
+    gap: 10px;
+}
+
+.top .rightSide span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2C2F3A;
+}
+
+.top .rightSide .filterBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 177px;
+    border-radius: 10px;
+    border: 1px solid #60677F;
+}
+
+.top .rightSide .filterBox span {
+    font-weight: 400;
+    margin-left: 10px;
+    color: #2C2F3A;
+}
+
+.top .rightSide .filterBox img {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+hr {
+    color: #2C2F3A;
+    stroke: 1px;
+}
+
+.line {
+    display: flex;
+    width: 80.7%;
+    height: 1px;
+    background-color: #D1D3DC;
+    margin-left: 145px;
+    margin-top: 20px;
+}
+
+.results {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.resultView {
+    display: flex;
+    flex-direction: column;
+}
+
+.mob_view {
+    display: none;
+}
+
+.nextPage_section {
+    margin-top: 40px;
+    margin-left: 145px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nextPage_section .right_side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 32px;
+    width: auto;
+    color: #2C2F3A;
+    margin-left: auto;
+    margin-right: 145px;
+
+}
+
+.right_side span {
+    margin-top: 4px;
+}
+
+.nextPage_section .right_side .text1 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.nextPage_section .right_side .text2 {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #0F32B1;
+}
+
+.nextPage_section .right_side .text2 span {
+    display: flex;
+    position: relative;
+    height: 30px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.nextPage_section .right_side .next_btn {
+    color: #0F32B1;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.icon img {
+    display: flex;
+    width: 20px;
+    height: 4px;
+}
+
+@media screen and (max-width: 360px) {
+    .top {
+        margin-left: 20px;
+        width: 320px;
+    }
+
+    .top .rightSide {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .results {
+        display: none;
+    }
+
+    .top .resultView {
+        display: none;
+    }
+
+    .mob_view {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nextPage_section {
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 10px;
+        font-size: 14px;
+    }
+}

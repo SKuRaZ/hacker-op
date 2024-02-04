@@ -1,0 +1,186 @@
+.box {
+    border: 1px solid #D1D3DC;
+    height: 284px;
+    width: 384px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px rgba(172, 188, 245, 0.25);
+    box-shadow: 0px 10px 12px rgba(176, 184, 211, 0.30);
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.container {
+
+    display: flex;
+}
+
+.container .heading {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.container .logo {
+    height: 72px;
+    width: 72px;
+    border-radius: 50px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    background-position: center;
+    border: 1px solid #D1D3DC;
+}
+
+.container .logo .logoBox {
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+
+}
+
+.container .logo .logoBox img {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.container .heading .text1 {
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    color: #2C2F3A;
+    margin-left: 92px;
+    display: flex;
+    align-items: center;
+}
+
+.container .heading .text2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #60677F;
+    font-size: 14px;
+    width: auto;
+    height: 28px;
+    margin-left: 92px;
+}
+
+.container .heart_icon {
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    margin-top: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.box .line {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #D1D3DC;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.box .description__one {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.box .description__one .text1 {
+    color: #60677F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.box .description__one .text2 {
+    color: #2C2F3A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box .description__two {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.box .description__two .fee {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.box .description__two .duration {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+
+}
+.box .description__two .type {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.description__two .title {
+    color: #60677F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.description__two .title_value {
+    color: #2C2F3A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 360px) {
+    .box {
+        width: 320px;
+        height: 244px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .container .heading {}
+
+    .container .heading .text1 {
+        font-size: 14px;
+        width: 168px;
+        height: 40px;
+    }
+
+    .container .heading .text2 {
+        font-size: 12px;
+        width: 168px;
+        height: 18px;
+    }
+
+    .container .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .container .logo .logoBox img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .box .description__one  {
+            font-size: 12px;
+    }
+    .box .description__two .type {
+    display: flex;
+    flex-direction: column;
+    }
+}

@@ -1,0 +1,317 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header .profileImage {
+    display: inline-block;
+
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+
+
+.header .profileImage .photo img {
+    width: 100%;
+    height: auto;
+}
+
+.header .profileImage .text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .profileImage .text .text1 {
+    display: flex;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    width: max-content;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .profileImage .text .text2 {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: auto;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header .profileImage .searchBox {
+    position: relative;
+    display: inline-block;
+    background-color: #FFFFFF;
+    height: 184px;
+    width: 1216px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 4px rgba(172, 188, 245, 0.25);
+    box-shadow: 0px 10px 12px rgba(176, 184, 211, 0.30);
+}
+
+.header .profileImage .searchBox .searchArea {
+    position: relative;
+    display: inline-flex;
+    width: 1016px;
+    height: 56px;
+    left: 20px;
+    top: 20px;
+    border-radius: 100px;
+    border: 1px solid #D1D3DC;
+}
+
+/* .header .profileImage .searchBox .searchArea  {
+    position: relative;
+    display: flex;
+    align-content: center;
+justify-content: center;
+} */
+
+.header .profileImage .searchBox .searchArea img {
+    height: 18px;
+    width: 18px;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+}
+
+.header .profileImage .searchBox .searchArea input {
+    margin-left: 20px;
+    background: transparent;
+    width: 944px;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.header .profileImage .searchBox .signin-btn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 131px;
+    height: 56px;
+    background-color: rgba(15, 50, 177, 1);
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    left: 140px;
+
+}
+
+.header .profileImage .searchBox .searchBy {
+    display: flex;
+    position: relative;
+    width: auto;
+    top: 40px;
+    left: 20px;
+    gap: 20px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByCountries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 191px;
+    border-radius: 10px;
+}
+
+.header .profileImage .searchBox .searchBy span {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.header .profileImage .searchBox .searchBy img {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByCourses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 179px;
+    border-radius: 10px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByDegree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 173px;
+    border-radius: 10px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByDuration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 185px;
+    border-radius: 10px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByFees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 153px;
+    border-radius: 10px;
+}
+
+.header .profileImage .searchBox .searchBy .searchByIntake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D3DC;
+    height: 48px;
+    width: 166px;
+    border-radius: 10px;
+}
+
+.filter {
+    display: none;
+}
+
+
+@media screen and (max-width: 360px) {
+    .header {
+        margin-left: 0px;
+    }
+
+    .header .profileImage .photo {
+        height: 400px;
+        width: 360px;
+
+    }
+
+    .header .profileImage .photo img {
+        position: relative;
+        justify-content: center;
+        height: 400px;
+        width: 360px;
+    }
+
+    .header .profileImage .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .profileImage .text .text1 {
+        margin: 0;
+        height: 56px;
+        width: 340px;
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: -20px;
+    }
+
+    .header .profileImage .text .text2 {
+        margin: 0;
+        height: 60px;
+        width: 315px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-left: auto;
+    }
+
+    .header .profileImage .searchBox {
+        position: relative;
+        height: 140px;
+        width: 320px;
+        justify-content: center;
+        margin-left: 7px;
+    }
+
+    .header .profileImage .searchBox .searchArea {
+        width: 296px;
+        height: 48px;
+        justify-content: center;
+        margin-left: -7px;
+
+    }
+
+    .header .profileImage .searchBox .searchArea img {
+        margin-top: 15px;
+    }
+
+    .searchBox .searchBy {
+        position: relative;
+        justify-content: center;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByCountries {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByCourses {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByDegree {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByDuration {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByFees {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .searchBy .searchByIntake {
+        display: none;
+    }
+
+    .header .profileImage .searchBox .signin-btn {
+        display: none;
+    }
+
+
+    .header .profileImage .searchBox .searchBy .filter {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        margin-right: 40px;
+    }
+
+    .header .profileImage .searchBox .searchBy img {
+        height: 24px;
+        width: 24px;
+        
+    }
+}

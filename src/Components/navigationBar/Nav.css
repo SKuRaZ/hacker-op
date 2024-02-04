@@ -1,0 +1,116 @@
+.nav {
+    display: flex;
+    background-color: white;
+    height: 80px;
+    width: auto;
+
+}
+
+.nav .logo {
+    display: flex;
+    margin-left: 70px;
+    align-items: center;
+    align-content: center;
+    /* gap: 10px; */
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #60677F;
+    padding: 10px;
+}
+
+ul .active {
+    color: rgba(15, 50, 177, 1);
+    font-weight: 600;
+    /* transition: all; */
+    cursor: pointer;
+}
+
+ul .services_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav .right-side {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+    margin-right: 145px;
+}
+
+.nav .right-side .signin-btn {
+    padding: 10px 24px;
+    background-color: rgba(15, 50, 177, 1);
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+}
+
+.nav .right-side .download-btn {
+    border: 1px solid rgba(255, 120, 90, 1);
+    color: rgba(255, 120, 90, 1);
+    padding: 10px 24px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+
+}
+
+.nav .right-side .download-btn img {
+    height: 14px;
+    width: 14px;
+}
+
+.hamburgerIcon {
+    display: none;
+}
+
+@media screen and (max-width: 360px) {
+    .nav{
+        width: 360px;
+        margin-left: 0px;
+    }
+    .nav .logo {
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav .right-side {
+        display: none;
+    }
+
+    .nav .hamburgerIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-left: 190px; */
+        margin-left: auto;
+        margin-right: 10px;
+        margin-top:25px;
+    }
+
+}
